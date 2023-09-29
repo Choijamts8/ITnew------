@@ -15,14 +15,14 @@
     <!-- Page Navbar -->
     <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
         <div class="container">
-            <a class="logo" href="#">設定</a>         
+            <a class="logo" href="setting.html">設定</a>         
             <ul class="nav">
                 <li class="item">
                     <a class="link" href="main.html">ホーム</a>
                 <li class="item">
                     <a class="link" href="rank.html">ランキング</a>
                 <li class="item">
-                    <a class="link" href="tos.html">気に入り</a>
+                    <a class="link" href="setting.html">気に入り</a>
                 <li class="item">
                     <a class="link" href="user.html">ユーザ</a>
                 </li>
@@ -38,11 +38,61 @@
 
     <!-- page header -->
     <header id="home" class="header">
+    <section class="profile">
+ <h1>プロファイル</h1>
+<!-- ユーザーのプロフィール情報を表示 -->
+ <div class="home-content">
+ <img src="#" alt="プロファイル画像">
+ <form action="" method="post">
+    <div class="row">
+        <div class="col-md-10 mb-3">
+            <label class="form-label" for="">ユーザーの変更</label>
+            <span class="text-danger">*</span>
+            <input class="form-control" type="text" name="name" placeholder="ウーガンバヤル" required>
+        </div>
+        <div class="col-md-10 mb-3">
+            <label class="form-label" for="">Birthday</label>
+            <span class="text-danger">*</span>
+            <input class="form-control" type="text" name="Birthday" placeholder="2000 06 29" required>
+        </div>
+        <div class="col-md-10 mb-3">
+            <label class="form-label" for="">Gender</label>
+            <span class="text-danger">*</span>
+            <input class="form-control" type="text" name="Gender" placeholder="Gender" required>
+        </div>
+        <div class="col-md-10 mb-3">
+            <label class="form-label" for="">Email</label>
+            <span class="text-danger">*</span>
+            <input class="form-control" type="text" name="email" placeholder="yse@test.com" required>
+        </div>
+        <div class="col-md-10 mb-3">
+            <label class="form-label" for="">Location</label>
+            <span class="text-danger">*</span>
+            <select name="prefecture" class="form-control">
+                <option value="">--- 都道府県 ---</option>
+                <option value="12">千葉</option>
+                        <option value="13">東京</option>
+                        <option value="14">神奈川</option>
+            </select>
+        </div>
+                 <div class="alert alert-info">
+                ユーザ登録サービス利用規約・個人情報の取り扱いについて
+            </div>
+            
+                <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" name="aggree" value="1">
+                <label class="form-check-label" for="">同意する</label>
+            </div>
 
-        <div class="overlay"></div>
+            <!-- 送信ボタン -->
+            <div class="d-grid">
+                <button class="btn btn-primary">登録</button>
+
+    </div>
+ </form>
+
+      
     </header><!-- end of page header -->
-    
-   
 
 
     <!-- footer -->
