@@ -53,12 +53,21 @@
         <div class="col-md-10 mb-3">
             <label class="form-label" for="">Birthday</label>
             <span class="text-danger">*</span>
-            <input class="form-control" type="text" name="Birthday" placeholder="2000 06 29" required>
+            <input class="form-control" type="text" count="count" placeholder="YYYY" required>
+            <input class="form-control" type="text" count="count" placeholder="MM" required>
+            <input class="form-control" type="text" count="count" placeholder="DD" required>
+</form>
+
+
         </div>
         <div class="col-md-10 mb-3">
             <label class="form-label" for="">Gender</label>
             <span class="text-danger">*</span>
-            <input class="form-control" type="text" name="Gender" placeholder="Gender" required>
+            <select name="button" class="form-control">
+                <option value="">Gender</option>
+                <option value="12">Male</option>
+                <option value="13">Female</option>
+            </select>
         </div>
         <div class="col-md-10 mb-3">
             <label class="form-label" for="">Email</label>
